@@ -93,7 +93,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Command\Commands.cs" />
+    <Compile Include="DAL.Abstract\IDriverRepository.cs" />
+    <Compile Include="DAL.Abstract\IGenericRepository.cs" />
+    <Compile Include="DAL.Abstract\IGoodRepository.cs" />
+    <Compile Include="DAL.Abstract\IManagerRepository.cs" />
+    <Compile Include="DAL.Abstract\IOrderRepository.cs" />
+    <Compile Include="DAL.Abstract\IStorageRepository.cs" />
     <Compile Include="DAL.IMPL\DeliveryData.cs" />
+    <Compile Include="DAL.IMPL\StorageRepository.cs" />
     <Compile Include="DAL.IMPL\UnitOfWork.cs" />
     <Compile Include="Model\Delivery.cs" />
     <Compile Include="Model\Driver.cs" />
