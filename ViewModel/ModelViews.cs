@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using trpz3.Infrastructure;
 
 namespace mvvc_wpf
 {

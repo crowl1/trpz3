@@ -12,3 +12,16 @@ C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\MVVC_MWP.csproj.GenerateResou
 C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.exe
 C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.pdb
 C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\App.g.cs
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\EntityFramework.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.AccessControl.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.Permissions.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\EntityFramework.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.AccessControl.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.Permissions.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\MVVC_MWP.csproj.CopyComplete

@@ -24,13 +24,13 @@ namespace mvvc_wpf
                 new Manager {Name = "Анастасія", ExecutionTime = 25, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
                 new Manager {Name = "Роман", ExecutionTime = 45, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()}
             };
-            Drivers = new ObservableCollection<Driver> 
+            Drivers = new ObservableCollection<Driver>
             {
-                new Driver {Name = "Олександр", MPS = 30, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {Name = "Роман", MPS = 20, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {Name = "Олексій", MPS = 50, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {Name = "Антон", MPS = 40, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {Name = "Андрій", MPS = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 0, Name = "Олександр", MpS = 30, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 0, Name = "Роман", MpS = 20, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 0, Name = "Олексій", MpS = 50, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 0, Name = "Антон", MpS = 40, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 0, Name = "Андрій", MpS = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
             };
         }
 
