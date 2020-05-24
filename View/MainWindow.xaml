@@ -1,0 +1,43 @@
+﻿<Window x:Class="mvvc_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mvvc_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="446.8" Width="349.334">
+    <Grid Margin="0,0,-5.8,0.4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="4,4,0,0" VerticalAlignment="Top"/>
+        <TextBox Name = "Name" Text="{Binding Сustomer}" HorizontalAlignment="Left" Height="32" Margin="39,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Button Content="Замовити" Command="{Binding AddCommand}" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" Width="114" Grid.Column="1"/>
+
+        
+        <ListBox Name="listBox_storage" Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Storages}"
+                 SelectedItem="{Binding SelectedStorage}" Margin="4,41,5.8,190.4" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"  >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="18" Text="{Binding Path=Name}" />
+                        <TextBlock FontSize="18" Text="{Binding Path=Distance}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ListBox Name="listBox_good" Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Goods}"
+                 SelectedItem="{Binding SelectedGood}" Margin="4,0,5.8,0.4" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Height="185" VerticalAlignment="Bottom"  >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="18" Text="{Binding Path=Name}" />
+                        <TextBlock FontSize="18" Text="{Binding Path=ExecutionTime}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

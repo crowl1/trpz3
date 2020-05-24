@@ -1,0 +1,14 @@
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\trpz3.exe.config
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\trpz3.exe
+C:\Users\crowli\source\repos\trpz3\trpz3\bin\Debug\trpz3.pdb
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.csprojAssemblyReference.cache
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\MainWindow.g.cs
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\App.g.cs
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3_MarkupCompile.cache
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3_MarkupCompile.lref
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\MainWindow.baml
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.g.resources
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.Properties.Resources.resources
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.csproj.GenerateResource.cache
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.exe
+C:\Users\crowli\source\repos\trpz3\trpz3\obj\Debug\trpz3.pdb
