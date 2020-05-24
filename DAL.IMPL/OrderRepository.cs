@@ -8,9 +8,9 @@ using trpz3.DAL.Abstract;
 
 namespace trpz3.DAL.IMPL
 {
-    public class StorageRepository : GenericRepository<Storage>, IStorageRepository
+    public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
-        public StorageRepository(DeliveryData context) : base(context)
+        public OrderRepository(DeliveryData context) : base(context)
         {
 
         }

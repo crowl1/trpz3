@@ -9,7 +9,7 @@ using mvvc_wpf;
 
 namespace trpz3.DAL.IMPL
 {
-    class DeliveryData
+    public class DeliveryData
     {
         public class DelivaryData : DbContext
         {

@@ -99,7 +99,13 @@
     <Compile Include="DAL.Abstract\IManagerRepository.cs" />
     <Compile Include="DAL.Abstract\IOrderRepository.cs" />
     <Compile Include="DAL.Abstract\IStorageRepository.cs" />
+    <Compile Include="DAL.IMPL\Container.cs" />
     <Compile Include="DAL.IMPL\DeliveryData.cs" />
+    <Compile Include="DAL.IMPL\DriverRepository.cs" />
+    <Compile Include="DAL.IMPL\GenericRepository.cs" />
+    <Compile Include="DAL.IMPL\GoodRepository.cs" />
+    <Compile Include="DAL.IMPL\ManagerRepository.cs" />
+    <Compile Include="DAL.IMPL\OrderRepository.cs" />
     <Compile Include="DAL.IMPL\StorageRepository.cs" />
     <Compile Include="DAL.IMPL\UnitOfWork.cs" />
     <Compile Include="Model\Delivery.cs" />
