@@ -8,18 +8,8 @@ namespace mvvc_wpf
 {
     public class Order
     {
-        private string _nameCustomer;
-        private long _timeLeft;
-
-        public string NameCustomer
-        {
-            get { return _nameCustomer; }
-            set { _nameCustomer = value; }
-        }
-        public long TimeLeft
-        {
-            get { return _timeLeft; }
-            set { _timeLeft = value; }
-        }
+        public int ID { get; set; }
+        public string NameCustomer { get; set; }
+        public long TimeLeft { get; set; }
     }
 }

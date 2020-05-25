@@ -8,24 +8,9 @@ namespace mvvc_wpf
 {
     public class Manager
     {
-        private string _name;
-        private long _executionTime;
-        private long _releaseTime;
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-        public long ExecutionTime
-        {
-            get { return _executionTime; }
-            set { _executionTime = value; }
-        }
-        public long ReleaseTime
-        {
-            get { return _releaseTime; }
-            set { _releaseTime = value; }
-        }
+        public int ID { get; set; }
+        public string Name {get; set;}
+        public long ExecutionTime { get; set; }
+        public long ReleaseTime { get; set; }
     }
 }

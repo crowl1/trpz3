@@ -9,31 +9,12 @@ using System.Threading.Tasks;
 namespace mvvc_wpf
 {
 
-
+    //тут привязка
     public class Storage : INotifyPropertyChanged
     {
-        private string _name;
-        private int _distance;
-
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                _name = value;
-                OnPropertyChanged("Name");
-            }
-        }
-
-        public int Distance
-        {
-            get { return _distance; }
-            set
-            {
-                _distance = value;
-                OnPropertyChanged("Distance");
-            }
-        }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Distance { get; set; }
 
 
         public event PropertyChangedEventHandler PropertyChanged;

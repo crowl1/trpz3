@@ -20,23 +20,24 @@ namespace mvvc_wpf
             Orders = new ObservableCollection<Order>{};
             Managers = new ObservableCollection<Manager>
             {
-                new Manager {Name = "Антон", ExecutionTime = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Manager {Name = "Анастасія", ExecutionTime = 25, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Manager {Name = "Роман", ExecutionTime = 45, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()}
+                new Manager {ID = 0, Name = "Антон", ExecutionTime = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Manager {ID = 1, Name = "Анастасія", ExecutionTime = 25, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Manager {ID = 2, Name = "Роман", ExecutionTime = 45, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()}
             };
             Drivers = new ObservableCollection<Driver>
             {
                 new Driver {ID = 0, Name = "Олександр", MpS = 30, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {ID = 0, Name = "Роман", MpS = 20, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {ID = 0, Name = "Олексій", MpS = 50, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {ID = 0, Name = "Антон", MpS = 40, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
-                new Driver {ID = 0, Name = "Андрій", MpS = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 1, Name = "Роман", MpS = 20, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 2, Name = "Олексій", MpS = 50, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 3, Name = "Антон", MpS = 40, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
+                new Driver {ID = 4, Name = "Андрій", MpS = 15, ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()},
             };
         }
 
         public void orderProcessing(string Name, int meters, int TimeGood)
         {
             Orders.Insert(0, new Order { NameCustomer = Name, TimeLeft = TimeGood + Math.Min(ManagerCalculation(), DriverCalculation(meters)) });
+            //MessageBox.Show(Orders[Orders.Count() - 1].NameCustomer + Convert.ToString(Orders[Orders.Count() - 1].TimeLeft));
         }
 
         List<long> manager_time = new List<long>();
@@ -92,11 +93,11 @@ namespace mvvc_wpf
                 {
                     if (DateTimeOffset.UtcNow.ToUnixTimeSeconds() >= d.ReleaseTime)
                     {
-                        d.ReleaseTime += meters / d.MPS;
+                        d.ReleaseTime += meters / d.MpS;
                     }
                     else
                     {
-                        d.ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds() + meters / d.MPS;
+                        d.ReleaseTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds() + meters / d.MpS;
                     }
                     return d.ReleaseTime;
                 }

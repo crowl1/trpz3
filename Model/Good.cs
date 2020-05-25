@@ -10,28 +10,11 @@ namespace mvvc_wpf
 {
     public class Good : INotifyPropertyChanged
     {
-        private string _name;
-        private int _executionTime;
+        //тут привязка
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int ExecutionTime { get; set; }
 
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                _name = value;
-                OnPropertyChanged("Name");
-            }
-        }
-
-        public int ExecutionTime
-        {
-            get { return _executionTime; }
-            set
-            {
-                _executionTime = value;
-                OnPropertyChanged("ExecutionTime");
-            }
-        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;

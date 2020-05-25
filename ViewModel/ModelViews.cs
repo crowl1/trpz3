@@ -7,12 +7,14 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using trpz3.DAL.IMPL;
 using trpz3.Infrastructure;
 
 namespace mvvc_wpf
 {
     class ModelViews : INotifyPropertyChanged
     {
+        private UnitOfWork _UnitOfWork;
         Delivery delivery = new Delivery();
 
 
@@ -88,6 +90,7 @@ namespace mvvc_wpf
                 new Good {Name = "Хліб", ExecutionTime = 200},
                 new Good {Name = "Торти", ExecutionTime = 1000}
             };
+            _UnitOfWork = trpz3.DAL.IMPL.Container.UnitOfWork;
         }
 
 
